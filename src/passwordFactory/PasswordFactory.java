@@ -83,7 +83,7 @@ public class PasswordFactory {
 			char c = str.charAt(0);
 			int val = (int) c *(int)(Math.random() * 500000);
 
-			if (val %2 == 0) {
+			if (val %7 == 0) {
 				password.append(str);
 				password.append(specialChar[indexRandomChar]);
 			}else {
