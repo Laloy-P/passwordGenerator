@@ -39,8 +39,9 @@ public class passwordFactotyTest {
 	@Test
 	public void lowerHashTest() {
 		
-		
-		assertThat(passFactory.lowerRandomly(passFactory.generateHash(passPhrase), 3), equalTo(expectedHash));
+		String hash = "C3DB7B9A1809F";
+		String expected = "c3dB7B9A1809F";
+		assertThat(passFactory.lowerRandomly(hash), equalTo(expected));
 		
 	}
 	
